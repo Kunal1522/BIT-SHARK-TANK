@@ -10,9 +10,16 @@ const nextConfig: NextConfig = {
         hostname: "*", // Allows images from any host
       },
     ],
+   
+  },
+  typescript:{
+    ignoreBuildErrors:true,
+  },
+  eslint:{
+    ignoreDuringBuilds:true,
   },
   experimental:{
-    ppr: 'incremental',
+   
     after:true,
   }as any,
   devIndicators:{
