@@ -1,54 +1,157 @@
-<h1 align="center">IEEE MegaProject</h1>
-<h3 align="center">Organised by IEEE Student Branch BIT Mesra</h3>
+# Codemons Project - Web App for Solopreneurs
 
-# About the Event
-"Don’t compare yourself with anyone in this world. If you do so, you are insulting yourself." – Bill Gates
+## Team Details
 
-After seven successful editions, we are here to present you with an opportunity of prototyping your imagination with the IEEE Mega Project.
+- **Team Name**: Codemons
+- **Team Members**:
+  - **Kunal Kashyap** (Team Leader)
+  - **Pratham Periwal** (Team Member)
 
-IEEE Mega Project is a platform to learn and experience the entire process of making a project, from ideation to execution and then it's presentation. It is a platform for students to showcase their innovative ideas in working.
-It's a team-based project building event, where college students collaborate together to bring their ideas to reality.
+## Domain of the Project
 
-# Note
-**Note:**
-Ensure that your README file is comprehensive and up-to-date, covering the following mandatory details:
-- Team Details
-- Domain of your project
-- Idea
-- Achievements thus far
-- How to execute your code sample
+- **Domain**: Startups and Tech
 
-These are essential details that must be included. You can refer to the `CONTRIBUTION.md` file present in this repository for a template. Copy and customize it according to your project's specifics. Feel free to add more details as needed.
+## Idea
 
-# Timeline
-December 20, 2024 - January 18, 2025
+# Codemons Project - Web App for Solopreneurs
 
-# How to create a Pull Request
-Before you get started, these are the steps that you need to follow only ONCE at the begining:
-- [Fork this repository](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository) so that you can make your changes without affecting the original project until you're ready to merge them.
-- Go to your forked repository. Notice that the end of the URL should resemble `<your_github_username>/IEEE-Megaproject-24`.
-- Clone your forked repository: Click on the green `Code` button and copy the `HTTPS` URL of the repository.
-    - Now, open `gitbash`(or `Terminal`, if you are on UNIX-system) in the folder where you want to clone the repository, and issue the following command:
-    ```
-    git clone <paste_your_cloned_URL_here>
-    ```
-    - After cloning is done, confirm that a folder named `IEEE-Megaproject-24` is present in your current working directory.
+## Team Details
 
+- **Team Name**: Codemons
+- **Team Members**:
+  - **Kunal Kashyap** (Team Leader)
+  - **Pratham Periwal** (Team Member)
 
-Now, Follow the below steps for submitting each Project:
-- Copy your project folder.
-- Paste it in the local clone of `IEEE-Megaproject-24`(created in the above steps), inside the respective Project folder.
-- Rename your Project folder to your Team name.
-- Now, Right-click and open `gitbash` in the `IEEE-Megaproject-24` folder, and issue the following commands in order:
-```
-git add .
+## Domain of the Project
 
-git commit -m "Your commit message"
+- **Domain**: Startups and Tech
 
-git push -u origin main
-```
-- After pushing your project to github, you need to create a Pull Request to the main IEEE Megaproject repository. For that, open your forked repository in browser, and you'll notice a big green button saying “Compare & pull request”. Press it!
-- This will open a page in which you’ll be able to further edit the description for your proposed changes. Once, you are done with those, you can click on the "Create Pull Request button", and that's it.
- Congratulations, you just made a new Pull request!!! :fire:
+## Idea
 
-For doubts regarding pull requests ping your project coordinators.
+Our project is an innovative **web app** designed to empower **solopreneurs** with **AI-powered features** that simplify key aspects of their startup journey. The app helps solopreneurs **gain visibility**, **connect with businesses**, and **streamline essential processes** such as pitch creation, legal assistance, and business promotion.
+
+With **AI-driven pitch feedback**, **legal advice**, and easy-to-use features like **GitHub authentication** and **views tracking**, the app supports solopreneurs in presenting their ideas, improving engagement, and navigating business challenges effectively.
+
+## 🌟 Features
+
+1. **AI-Powered Pitch Grader**: Solopreneurs can assess and improve their startup pitch using AI, receiving feedback for enhancement.
+2. **AI-Powered Legal Assistance**: Simplifies complex legal requirements with AI-driven advice tailored for solopreneurs in India.
+3. **Pitch Submission**: Users can submit startup ideas, including title, description, and multimedia links (image or video).
+4. **GitHub Authentication**: Allows users to log in easily using their GitHub account.
+5. **Views Counter**: Tracks the number of views for each pitch, providing insights into engagement.
+6. **Search Functionality**: Easily search for pitches to explore ideas efficiently.
+7. **Minimalistic Design**: A fresh and user-friendly UI for ease of use.
+8. **Admin Tools**: Admins can highlight top startup ideas using the "Editor Picks" feature via Sanity Studio.
+
+## Achievements Thus Far
+
+- ✅ **Fully Deployed**: The web app is fully deployed and functional.
+- ✅ **All Features Implemented**: All features, including AI-powered Pitch Grader and Legal Assistance, are operational.
+
+## Technologies Used
+
+- ⚛️ **React 19**
+- 🚀 **Next.js 15**
+- 📦 **Sanity**
+- 🎨 **TailwindCSS**
+- 🧑‍💻 **ShadCN**
+- 🖥️ **TypeScript**
+
+---
+
+## 🚀 Quick Start
+
+### ⚙️ Installation
+
+Install the required dependencies:
+
+```bash
+npm install
+🔑 Set Up Environment Variables
+Create a .env.local file in the root directory and add the following content:
+
+bash
+Copy
+Edit
+NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
+NEXT_PUBLIC_SANITY_DATASET=your_dataset
+NEXT_PUBLIC_SANITY_API_VERSION='vX'
+SANITY_TOKEN=your_sanity_token
+
+AUTH_SECRET=your_auth_secret
+AUTH_GITHUB_ID=your_github_id
+AUTH_GITHUB_SECRET=your_github_secret
+Replace the placeholders (your_project_id, your_sanity_token, etc.) with your actual credentials from Sanity and GitHub.
+
+🚀 Running the Project
+Start the development server:
+
+bash
+Copy
+Edit
+npm run dev
+Access the app at:
+
+http://localhost:3000
+
+## 🌟 Features
+
+1. **AI-Powered Pitch Grader**: Solopreneurs can assess and improve their startup pitch using AI, receiving feedback for enhancement.
+2. **AI-Powered Legal Assistance**: Simplifies complex legal requirements with AI-driven advice tailored for solopreneurs in India.
+3. **Pitch Submission**: Users can submit startup ideas, including title, description, and multimedia links (image or video).
+4. **GitHub Authentication**: Allows users to log in easily using their GitHub account.
+5. **Views Counter**: Tracks the number of views for each pitch, providing insights into engagement.
+6. **Search Functionality**: Easily search for pitches to explore ideas efficiently.
+7. **Minimalistic Design**: A fresh and user-friendly UI for ease of use.
+8. **Admin Tools**: Admins can highlight top startup ideas using the "Editor Picks" feature via Sanity Studio.
+
+## Achievements Thus Far
+
+- ✅ **Fully Deployed**: The web app is fully deployed and functional.
+- ✅ **All Features Implemented**: All features, including AI-powered Pitch Grader and Legal Assistance, are operational.
+
+## Technologies Used
+
+- ⚛️ **React 19**
+- 🚀 **Next.js 15**
+- 📦 **Sanity**
+- 🎨 **TailwindCSS**
+- 🧑‍💻 **ShadCN**
+- 🖥️ **TypeScript**
+
+---
+
+## 🚀 Quick Start
+
+### ⚙️ Installation
+
+Install the required dependencies:
+
+```bash
+npm install
+🔑 Set Up Environment Variables
+Create a .env.local file in the root directory and add the following content:
+
+bash
+Copy
+Edit
+NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
+NEXT_PUBLIC_SANITY_DATASET=your_dataset
+NEXT_PUBLIC_SANITY_API_VERSION='vX'
+SANITY_TOKEN=your_sanity_token
+
+AUTH_SECRET=your_auth_secret
+AUTH_GITHUB_ID=your_github_id
+AUTH_GITHUB_SECRET=your_github_secret
+Replace the placeholders (your_project_id, your_sanity_token, etc.) with your actual credentials from Sanity and GitHub.
+
+🚀 Running the Project
+Start the development server:
+
+bash
+Copy
+Edit
+npm run dev
+Access the app at:
+
+http://localhost:3000
