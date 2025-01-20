@@ -6,13 +6,9 @@ const Page = async () => {
   const session = await auth();
 
   if (!session) redirect("/");
-  
   return (
     <>
       {" "}
-      <section className="pink_container min-h-[230px]">
-        <h1 className="heading">Have doubts????</h1>
-      </section>
       <LegalForm/>
     </>
   );
