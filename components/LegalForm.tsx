@@ -25,7 +25,7 @@ const LegalAdviceForm = () => {
       setAdvice(result?.data?.response?.candidates[0]?.content?.parts[0]?.text || null);
     } catch (error) {
       console.error("Error fetching advice:", error);
-      setAdvice("Sorry, we couldn't process your request at the moment.");
+      setAdvice("We regret to inform you that the counsel cannot process your request at this time.");
     } finally {
       setIsSubmitting(false);
     }
@@ -33,28 +33,28 @@ const LegalAdviceForm = () => {
 
   return (
     <section style={styles.container}>
-      <h1 style={styles.title}>Legal Advice Portal</h1>
+      <h1 style={styles.title}>Legal Counsel Charter</h1>
       <form onSubmit={handleFormSubmit} style={styles.form}>
         <label htmlFor="legalProblem" style={styles.label}>
-          Describe Your Legal Problem
+          State Your Legal Concern
         </label>
         <textarea
           id="legalProblem"
           name="legalProblem"
           style={styles.textarea}
           required
-          placeholder="Briefly describe your legal issue or concern"
+          placeholder="Compose your legal query in a formal manner"
         />
         <button
           type="submit"
           style={{
             ...styles.button,
-            backgroundColor: isSubmitting ? "#d9d2c5" : "#bc8f8f",
+            backgroundColor: isSubmitting ? "#d4b88e" : "#8b5e3c",
             cursor: isSubmitting ? "not-allowed" : "pointer",
           }}
           disabled={isSubmitting}
         >
-          {isSubmitting ? "Submitting..." : "Submit for Legal Advice"}
+          {isSubmitting ? "Submitting..." : "Submit for Counsel"}
         </button>
       </form>
       <div style={styles.result}>
@@ -64,7 +64,7 @@ const LegalAdviceForm = () => {
             dangerouslySetInnerHTML={{ __html: md.render(advice) }}
           />
         ) : (
-          <p style={styles.placeholder}>No details provided yet.</p>
+          <p style={styles.placeholder}>Awaiting your submission...</p>
         )}
       </div>
     </section>
@@ -75,70 +75,78 @@ const styles = {
   container: {
     minHeight: "100vh",
     padding: "20px",
-    background: "url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 fill=%22none%22 viewBox=%220 0 800 600%22><rect width=%22800%22 height=%22600%22 fill=%22%23f3ecd6%22/><path stroke=%22%23d7c2a0%22 stroke-width=%221%22 d=%22M0 0H800V600H0z%22/></svg>')",
+    background: "url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 fill=%22none%22 viewBox=%220 0 800 600%22><rect width=%22800%22 height=%22600%22 fill=%22%23f9f0d9%22/><path stroke=%22%23bfa67a%22 stroke-width=%221%22 d=%22M0 0H800V600H0z%22/></svg>')",
     backgroundSize: "cover",
-    fontFamily: "'Georgia', serif",
+    fontFamily: "'Merriweather', serif",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
   },
   title: {
-    fontSize: "2rem",
+    fontSize: "2.5rem",
     color: "#5a3d31",
     marginBottom: "20px",
-    textShadow: "1px 1px #d7c2a0",
+    textShadow: "2px 2px #bfa67a",
+    fontWeight: "bold",
+    borderBottom: "3px solid #bfa67a",
+    paddingBottom: "10px",
   },
   form: {
     width: "100%",
     maxWidth: "600px",
-    backgroundColor: "#f8f4e8",
+    backgroundColor: "#f9f0d9",
     padding: "20px",
     borderRadius: "10px",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+    border: "2px solid #bfa67a",
+    boxShadow: "0 6px 12px rgba(0, 0, 0, 0.3)",
   },
   label: {
     display: "block",
-    fontSize: "1rem",
+    fontSize: "1.2rem",
     color: "#5a3d31",
     marginBottom: "10px",
+    fontWeight: "bold",
   },
   textarea: {
     width: "100%",
-    height: "100px",
+    height: "120px",
     padding: "10px",
     fontSize: "1rem",
     color: "#5a3d31",
     borderRadius: "5px",
-    border: "1px solid #d7c2a0",
-    background: "#fefefe",
+    border: "1px solid #bfa67a",
+    background: "#fefcf5",
     resize: "none",
+    fontFamily: "'Merriweather', serif",
   },
   button: {
     display: "block",
     width: "100%",
-    padding: "10px 15px",
-    fontSize: "1rem",
+    padding: "12px 15px",
+    fontSize: "1.1rem",
     color: "#fff",
-    backgroundColor: "#bc8f8f",
     border: "none",
     borderRadius: "5px",
     marginTop: "10px",
+    fontWeight: "bold",
   },
   result: {
     marginTop: "20px",
     width: "100%",
     maxWidth: "600px",
-    padding: "10px",
-    backgroundColor: "#f8f4e8",
+    padding: "15px",
+    backgroundColor: "#f9f0d9",
     borderRadius: "10px",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+    border: "2px solid #bfa67a",
+    boxShadow: "0 6px 12px rgba(0, 0, 0, 0.3)",
     textAlign: "center",
   },
   article: {
-    fontSize: "1rem",
+    fontSize: "1.1rem",
     color: "#5a3d31",
     whiteSpace: "pre-wrap",
+    fontStyle: "italic",
   },
   placeholder: {
     fontSize: "1rem",
