@@ -135,7 +135,9 @@ const PitchPage = () => {
 
   return (
     <section className="flex flex-col justify-center items-center min-h-[calc(100vh-3rem)] relative bg-gradient-to-r from-blue-800 to-teal-600 p-6 rounded-lg shadow-xl">
-      <h1 className="text-white text-3xl font-bold mb-6 text-center">Want to Pitch? Heres a pitch grader to assist u </h1>
+      <h1 className="text-white text-3xl font-bold mb-6 text-center">
+Looking to perfect your pitch? Here's a pitch grader to guide you with insights and suggestions for improvement.
+  </h1>
 
       <button
         onClick={handleStartRecording}
