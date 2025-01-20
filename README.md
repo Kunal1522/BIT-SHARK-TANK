@@ -1,41 +1,54 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">IEEE MegaProject</h1>
+<h3 align="center">Organised by IEEE Student Branch BIT Mesra</h3>
 
-## Getting Started
+# About the Event
+"Don’t compare yourself with anyone in this world. If you do so, you are insulting yourself." – Bill Gates
 
-First, run the development server:
+After seven successful editions, we are here to present you with an opportunity of prototyping your imagination with the IEEE Mega Project.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+IEEE Mega Project is a platform to learn and experience the entire process of making a project, from ideation to execution and then it's presentation. It is a platform for students to showcase their innovative ideas in working.
+It's a team-based project building event, where college students collaborate together to bring their ideas to reality.
+
+# Note
+**Note:**
+Ensure that your README file is comprehensive and up-to-date, covering the following mandatory details:
+- Team Details
+- Domain of your project
+- Idea
+- Achievements thus far
+- How to execute your code sample
+
+These are essential details that must be included. You can refer to the `CONTRIBUTION.md` file present in this repository for a template. Copy and customize it according to your project's specifics. Feel free to add more details as needed.
+
+# Timeline
+December 20, 2024 - January 18, 2025
+
+# How to create a Pull Request
+Before you get started, these are the steps that you need to follow only ONCE at the begining:
+- [Fork this repository](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository) so that you can make your changes without affecting the original project until you're ready to merge them.
+- Go to your forked repository. Notice that the end of the URL should resemble `<your_github_username>/IEEE-Megaproject-24`.
+- Clone your forked repository: Click on the green `Code` button and copy the `HTTPS` URL of the repository.
+    - Now, open `gitbash`(or `Terminal`, if you are on UNIX-system) in the folder where you want to clone the repository, and issue the following command:
+    ```
+    git clone <paste_your_cloned_URL_here>
+    ```
+    - After cloning is done, confirm that a folder named `IEEE-Megaproject-24` is present in your current working directory.
+
+
+Now, Follow the below steps for submitting each Project:
+- Copy your project folder.
+- Paste it in the local clone of `IEEE-Megaproject-24`(created in the above steps), inside the respective Project folder.
+- Rename your Project folder to your Team name.
+- Now, Right-click and open `gitbash` in the `IEEE-Megaproject-24` folder, and issue the following commands in order:
 ```
+git add .
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+git commit -m "Your commit message"
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+git push -u origin main
+```
+- After pushing your project to github, you need to create a Pull Request to the main IEEE Megaproject repository. For that, open your forked repository in browser, and you'll notice a big green button saying “Compare & pull request”. Press it!
+- This will open a page in which you’ll be able to further edit the description for your proposed changes. Once, you are done with those, you can click on the "Create Pull Request button", and that's it.
+ Congratulations, you just made a new Pull request!!! :fire:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# BIT-SHARK-TANK
-this is a shark tank bit edition
->>>>>>> c137597ce5cdd06572f9518548acf9aca7daccc1
+For doubts regarding pull requests ping your project coordinators.
