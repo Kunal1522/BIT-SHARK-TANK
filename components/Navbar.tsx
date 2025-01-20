@@ -24,7 +24,7 @@ const Navbar = async () => {
         <div className="flex items-center gap-5 text-black">
           {session && session?.user ? (
             <>
-              <Link href="/startup/create">
+              <Link href="/startup/create" title="Create Startup">
                 <span className="max-sm:hidden">
                   <MdCreateNewFolder
                     size={30}
@@ -32,7 +32,7 @@ const Navbar = async () => {
                   />
                 </span>
               </Link>
-              <Link href="/legal">
+              <Link href="/legal" title="Legal">
                 <span className="max-sm:hidden">
                   <GoLaw
                     size={30}
@@ -40,7 +40,7 @@ const Navbar = async () => {
                   />
                 </span>
               </Link>
-              <Link href="/pitch">
+              <Link href="/pitch" title="Pitch">
                 <span className="max-sm:hidden">
                   <FaMicrophone
                     size={30}
@@ -54,7 +54,7 @@ const Navbar = async () => {
                   await signOut({ redirectTo: "/" });
                 }}
               >
-                <button type="submit">
+                <button type="submit" title="Logout">
                   <span className="max-sm:hidden">
                     <GrLogout
                       size={40}
@@ -63,7 +63,7 @@ const Navbar = async () => {
                   </span>
                 </button>
               </form>
-              <Link href={`/user/${session?.id}`}>
+              <Link href={`/user/${session?.id}`} title="User Profile">
                 <span>{session?.user.name}</span>
               </Link>
             </>
@@ -75,7 +75,7 @@ const Navbar = async () => {
                 await signIn("github");
               }}
             >
-              <button type="submit">Login</button>
+              <button type="submit" title="Login">Login</button>
             </form>
           )}
         </div>

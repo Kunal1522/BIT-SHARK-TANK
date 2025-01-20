@@ -1,8 +1,9 @@
-import SearchForm from "@/components/SearchForm";
-import StartupCard, { StartupTypeCard } from "@/components/StartupCard";
-import { STARTUPS_QUERY } from "@/sanity/lib/queries";
-import { sanityFetch, SanityLive } from "@/sanity/lib/live";
-import { auth } from "@/auth";
+import { useState, useEffect } from "react"; // React hooks for state and effects
+import SearchForm from "@/components/SearchForm"; // Your search form component
+import StartupCard, { StartupTypeCard } from "@/components/StartupCard"; // Startup card and its type
+import { STARTUPS_QUERY } from "@/sanity/lib/queries"; // Sanity query for startups
+import { sanityFetch } from "@/sanity/lib/live"; // Fetch function from your Sanity setup
+import { auth } from "@/auth"; // Authentication helper
 
 export default async function Home({
   searchParams,
@@ -12,11 +13,21 @@ export default async function Home({
   const query = (await searchParams).query;
   const params = { search: query || null };
 
+  // Get session data for authentication (if needed)
   const session = await auth();
 
-  console.log(session?.id);
+  const [posts, setPosts] = useState<StartupTypeCard[]>([]); // State to store fetched posts
 
-  const { data: posts } = await sanityFetch({ query: STARTUPS_QUERY, params });
+  // Function to fetch the latest posts
+  const fetchData = async () => {
+    const { data } = await sanityFetch({ query: STARTUPS_QUERY, params });
+    setPosts(data);
+  };
+
+  // Initial fetch when the component loads or when the search query changes
+  useEffect(() => {
+    fetchData();
+  }, [query]);
 
   return (
     <>
@@ -49,7 +60,11 @@ export default async function Home({
           )}
         </ul>
       </section>
-      <SanityLive />
+
+      {/* Optional: Button to manually refresh data */}
+      <button onClick={fetchData} className="refresh-btn">
+        Refresh Data
+      </button>
     </>
   );
 }
