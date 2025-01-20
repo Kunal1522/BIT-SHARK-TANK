@@ -21,7 +21,7 @@ const workSans = localFont({
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <head>
         {/* Add Crisp Chat Script */}
         <script
